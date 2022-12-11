@@ -33,7 +33,7 @@ Build the application for production:
 npm run build
 ```
 
-Locally preview production build:
+Locally preview production build on http://localhost:3000/RSS-Parser/
 
 ```bash
 npm run preview
