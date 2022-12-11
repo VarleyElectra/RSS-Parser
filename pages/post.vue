@@ -40,10 +40,12 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <v-row class="ma-2 pa-5 elevation-5">
+    <v-row
+        v-if="postByTitle.imageUrls.length > 0"
+        class="ma-2 pa-5 elevation-5"
+    >
       <h3>Фото</h3>
       <v-carousel
-          v-if="postByTitle.imageUrls.length > 0"
           :hide-delimiters="postByTitle.imageUrls.length <= 1"
           :show-arrows="postByTitle.imageUrls.length > 1"
           class="carousel"
@@ -95,7 +97,7 @@ const route = useRoute();
 const postByTitle = store.getPostByTitle(route.query.title);
 
 const modelValuesForImages = ref([]);
-modelValuesForImages.value = postByTitle.imageUrls.map(() => ref(false))
+modelValuesForImages.value = postByTitle.imageUrls.map(() => false)
 </script>
 
 <style scoped>
