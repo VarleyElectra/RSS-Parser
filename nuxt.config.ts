@@ -3,22 +3,10 @@ export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt',
     ],
-    css: ['vuetify/lib/styles/main.sass', '@/assets/styles/main.scss'],
+    css: ['vuetify/lib/styles/main.sass'],
     ssr: false,
     build: {
         transpile: ['vuetify'],
-    },
-    vite: {
-        define: {
-            'process.env.DEBUG': false,
-        },
-        css: {
-            preprocessorOptions: {
-                scss: {
-                    additionalData: '@import "@/assets/styles/variables.scss";',
-                },
-            },
-        },
     },
     app: {
         baseURL: process.env.NODE_ENV === 'production'
