@@ -20,4 +20,10 @@ export default defineNuxtConfig({
             },
         },
     },
+    app: {
+        baseURL: process.env.NODE_ENV === 'production'
+            ? '/RSS-Parser/'
+            : '/',
+        buildAssetsDir: '/RSS-Parser/',
+    },
 })
