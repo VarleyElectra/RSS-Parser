@@ -2,6 +2,22 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Download
+
+Download project from github:
+
+```bash
+git init
+```
+
+```bash
+git clone https://github.com/VarleyElectra/RSS-Parser.git
+```
+
+```bash
+cd RSS-Parser/
+```
+
 ## Setup
 
 Make sure to install the dependencies:
